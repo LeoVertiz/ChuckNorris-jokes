@@ -37,7 +37,7 @@ export default class App extends React.Component {
     let colsJsx = [];
     for(let i = 0; i < this.NUMBER_OF_COLS; i++){
       colsJsx.push(
-        React.createElement("div", {className: "col", key: i}, this.state.cols[i])
+        React.createElement("div", {className: "col-lg-3", key: i}, this.state.cols[i])
       );
     }
     return React.createElement("div", {className: "row"}, colsJsx);
